@@ -39,11 +39,27 @@ struct ScreenTwo: View {
             
                 
                 ZStack {
-                    Image("c")
+                    
+                    Image("c")//top
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 170)
-                        .offset(CGSize(width: 140, height: -240))
+                        .frame(height:170)
+                        .offset(CGSize(width: 155, height: -240))
+                    
+                    Image("c")//bottom
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height:170)
+                        .offset(CGSize(width: 100, height: 330))
+    
+                    
+                    Image("c")//mid
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height:130)
+                        .offset(CGSize(width: -250, height: -90))
+                
+                    
                 }
 
                 
@@ -51,81 +67,118 @@ struct ScreenTwo: View {
                 VStack(spacing: 10) { // Spacing between rows
                     // Happy and Motivated images with text
                     HStack {
-                        VStack {
+                        // Happy Section
+                        VStack(spacing: 2) {
                             Button(action: {
                                 displayedQuote = happyQuotes.randomElement() ?? "A happy quote goes here"
                                 showDropdown.toggle()
-
                             }) {
-                                Image("Happy")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 170)
-                                    .cornerRadius(20)
-                                    .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                VStack {
+                                    Image("Happy")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 170)
+                                        .cornerRadius(20)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+
+                                    Text("Happy")
+                                        .font(.system(size: 22, weight: .bold))
+                                        .foregroundColor(Color.white)
+                                        .padding(.vertical, 4)
+                                        .padding(.horizontal, 20)
+                                        .background(Color.blue.opacity(0.05)) // Slight opacity for visibility
+                                        .cornerRadius(20)
+                                        .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                }
                             }
-                            Text("Happy")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundColor(.black)
                         }
                         
                         Spacer().frame(width: 30) // Controls the spacing between buttons
-                        
-                        VStack {
+
+                        // Motivated Section
+                        VStack(spacing: 2) {
                             Button(action: {
                                 displayedQuote = motivatedQuotes.randomElement() ?? "A motivated quote goes here"
                                 showDropdown.toggle()
                             }) {
-                                Image("Motivated")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 170)
-                                    .cornerRadius(20)
-                                    .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                VStack {
+                                    Image("Motivated")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 170)
+                                        .cornerRadius(20)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+
+                                    Text("Motivated")
+                                        .font(.system(size: 22, weight: .bold))
+                                        .foregroundColor(Color.white)
+                                        .padding(.vertical, 4)
+                                        .padding(.horizontal, 20)
+                                        .background(Color.blue.opacity(0.05)) // Slight opacity for visibility
+                                        .cornerRadius(20)
+                                        .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                }
                             }
-                            Text("Motivated")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundColor(.black)
                         }
                     }
-
                     // Mellow and Upset images with text
                     HStack {
-                        VStack {
+                        // Mellow Section
+                        VStack(spacing: 2) {
                             Button(action: {
                                 displayedQuote = mellowQuotes.randomElement() ?? "A mellow quote goes here"
                                 showDropdown.toggle()
                             }) {
-                                Image("Mellow")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 170)
-                                    .cornerRadius(20)
-                                    .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                VStack {
+                                    Image("Mellow")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 170)
+                                        .cornerRadius(20)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                    
+                                    Text("Mellow")
+                                        .font(.system(size: 22, weight: .bold))
+                                        .foregroundColor(Color.white)
+                                        .padding(.vertical, 4)
+                                        .padding(.horizontal, 20)
+                                        .background(Color.blue.opacity(0.05))  // Slightly increased opacity for visibility
+                                        .cornerRadius(20)
+                                        .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                }
                             }
-                            Text("Mellow")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundColor(.black)
                         }
-                        
-                        Spacer().frame(width: 30) // Controls the spacing between buttons
-                        
-                        VStack {
-                            Button(action: {
-                                showDropdown.toggle()
-                                displayedQuote = upsetQuotes.randomElement() ?? "A upset quote goes here"
 
+                        Spacer().frame(width: 30) // Controls the spacing between buttons
+
+                        // Upset Section
+                        VStack(spacing: 2) {
+                            Button(action: {
+                                displayedQuote = upsetQuotes.randomElement() ?? "An upset quote goes here"
+                                showDropdown.toggle()
                             }) {
-                                Image("Upset")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 170)
-                                    .cornerRadius(20)
-                                    .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                VStack {
+                                    Image("Upset")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 170)
+                                        .cornerRadius(20)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                    
+                                    Text("Upset")
+                                        .font(.system(size: 22, weight: .bold))
+                                        .foregroundColor(Color.white)
+                                        .padding(.vertical, 4)
+                                        .padding(.horizontal, 20)
+                                        .background(Color.blue.opacity(0.05))  // Increased opacity for better visibility
+                                        .cornerRadius(20)
+                                        .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                }
                             }
-                            Text("Upset")
-                                .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(.black)
                         }
                     }.padding(.horizontal)
 
@@ -136,18 +189,26 @@ struct ScreenTwo: View {
                             displayedQuote = allQuotes.randomElement() ?? "A random quote goes here"
 
                         }) {
-                            VStack {
-                                Image("Dora")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 190)
-                                    .cornerRadius(20)
-                                    .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
-
+                            ZStack  {
+                                VStack {
+                                    Image("Dora")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 190)
+                                        .cornerRadius(20)
+                                        .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                                    
+                                }
                             }
                             Text("Keep Going!")
-                                .font(.system(size: 25, weight: .bold))
-                                .foregroundColor(.black)
+                                .font(.system(size: 26, weight: .bold))
+                                .foregroundColor(Color.white)
+                                .padding(.vertical, 4)
+                                .padding(.horizontal, 20)
+                                .background(Color.blue.opacity(0.03)) // Slight opacity for visibility
+                                .cornerRadius(20)
+                                .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                                .shadow(color: .blue.opacity(0.4), radius: 10, x: 0, y: 5)
                         }
                     }.padding(.horizontal)
                 }
@@ -176,10 +237,35 @@ struct ScreenTwo: View {
             // Full-screen dropdown
             .fullScreenCover(isPresented: $showDropdown) {
                 ZStack {
-                    // Background for the dropdown (You can customize this)
+                    // Background for the dropdown
                     LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.9), Color.white]), startPoint: .top, endPoint: .bottom)
                         .edgesIgnoringSafeArea(.all)
 
+                    ZStack {
+                        //top
+                        Image("c")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height:170)
+                            .offset(CGSize(width: 155, height: -360))
+                        
+                        
+                        //bottom
+                        Image("c")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height:180)
+                            .offset(CGSize(width: 120, height: 300))
+                    
+                        //mid
+                        Image("c")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height:160)
+                            .offset(CGSize(width: -255, height: -85))
+                    
+                        
+                    }
                     VStack {
                         Spacer()
                        
@@ -189,13 +275,13 @@ struct ScreenTwo: View {
                                 .foregroundColor(.black)
                                 .multilineTextAlignment(.center)
                                 .padding()
-                                .background(Color.white.opacity(0.8)) // Semi-transparent white background for readability
-                                .cornerRadius(15) // Rounded corners for the text background
-                                .shadow(color: .blue.opacity(0.5), radius: 10, x: 0, y: 5) // Shadow for text background
+                                .background(Color.white.opacity(0.8))
+                                .cornerRadius(15)
+                                .shadow(color: .blue.opacity(0.5), radius: 10, x: 0, y: 5)
                                 .padding(.horizontal, 30)
-                                .fixedSize(horizontal: false, vertical: true) //
+                                .fixedSize(horizontal: false, vertical: true)
                         
-                                .padding(20)
+                                .padding(5)
                         
                         Image("cactus")
                             .resizable()

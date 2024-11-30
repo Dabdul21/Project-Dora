@@ -47,11 +47,11 @@ struct ContentView: View {
                             .offset(y: -80)
                             .offset(x: 30)
                         
-                        Image("4")
+                        Image("ss")
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 100)
-                            .offset(x: 155, y: -130)
+                            .frame(height: 70)
+                            .offset(x: 150, y: -135)
                         
                         // Buttons on the top right corner
                         .toolbar {
@@ -86,9 +86,12 @@ struct ContentView: View {
                     NavigationLink {
                         ScreenTwo()
                     } label: {
+                        
+                        
                         ZStack {
                             
-                            Image("1")
+                            
+                            Image("11")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 175)
@@ -118,7 +121,7 @@ struct ContentView: View {
                             Image("2")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(height: 170)
+                                .frame(height: 175)
 
 //                            Text("Keep Going!")
 //                                .font(.system(size: 25, weight: .bold))

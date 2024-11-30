@@ -11,7 +11,6 @@
 		B2181A3A2CAADD2100B170EC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2181A392CAADD2100B170EC /* TabBar.swift */; };
 		B2181A3C2CAADD7D00B170EC /* FavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2181A3B2CAADD7D00B170EC /* FavView.swift */; };
 		B23B37162CB4D897005603B6 /* stress .swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B37152CB4D893005603B6 /* stress .swift */; };
-		B2A078482CBE1B5A00440687 /* CloudShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A078472CBE1B5A00440687 /* CloudShape.swift */; };
 		B2C1D3312CA5841F0072737F /* Project_DoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C1D3302CA5841F0072737F /* Project_DoraApp.swift */; };
 		B2C1D3332CA5841F0072737F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C1D3322CA5841F0072737F /* ContentView.swift */; };
 		B2C1D3392CA584200072737F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C1D3382CA584200072737F /* Preview Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		B2181A392CAADD2100B170EC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B2181A3B2CAADD7D00B170EC /* FavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavView.swift; sourceTree = "<group>"; };
 		B23B37152CB4D893005603B6 /* stress .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "stress .swift"; sourceTree = "<group>"; };
-		B2A078472CBE1B5A00440687 /* CloudShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudShape.swift; sourceTree = "<group>"; };
 		B2C1D32D2CA5841F0072737F /* Project Dora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Dora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C1D3302CA5841F0072737F /* Project_DoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_DoraApp.swift; sourceTree = "<group>"; };
 		B2C1D3322CA5841F0072737F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				B2181A392CAADD2100B170EC /* TabBar.swift */,
 				B2181A3B2CAADD7D00B170EC /* FavView.swift */,
 				B2181A372CAAC94700B170EC /* ScreenTwo.swift */,
-				B2A078472CBE1B5A00440687 /* CloudShape.swift */,
 				B2E53AF22CB8301A00777F46 /* QuotesData.swift */,
 				B2C1D3362CA584200072737F /* Project_Dora.entitlements */,
 				B2C1D3372CA584200072737F /* Preview Content */,
@@ -160,7 +157,6 @@
 				B2C1D3332CA5841F0072737F /* ContentView.swift in Sources */,
 				B2181A3C2CAADD7D00B170EC /* FavView.swift in Sources */,
 				B2181A382CAAC94700B170EC /* ScreenTwo.swift in Sources */,
-				B2A078482CBE1B5A00440687 /* CloudShape.swift in Sources */,
 				B2C1D3312CA5841F0072737F /* Project_DoraApp.swift in Sources */,
 				B2E53AF32CB8301A00777F46 /* QuotesData.swift in Sources */,
 				B23B37162CB4D897005603B6 /* stress .swift in Sources */,
