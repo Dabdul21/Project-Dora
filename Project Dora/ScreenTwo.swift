@@ -37,7 +37,7 @@ struct ScreenTwo: View {
                 )
                 .edgesIgnoringSafeArea(.bottom)
             
-                
+                //background clouds
                 ZStack {
                     
                     Image("c")//top
