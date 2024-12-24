@@ -13,6 +13,8 @@
 		B23B37162CB4D897005603B6 /* stress .swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B37152CB4D893005603B6 /* stress .swift */; };
 		B243E3432D09D4E100B29803 /* ScreenThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B243E3422D09D4E100B29803 /* ScreenThree.swift */; };
 		B24A10EB2D1A6EB2000D835A /* CloudBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A10EA2D1A6EB2000D835A /* CloudBackground.swift */; };
+		B24A10ED2D1A7354000D835A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A10EC2D1A7354000D835A /* Buttons.swift */; };
+		B24A10EF2D1A7E34000D835A /* QuotesDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A10EE2D1A7E34000D835A /* QuotesDropDown.swift */; };
 		B2C1D3312CA5841F0072737F /* Project_DoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C1D3302CA5841F0072737F /* Project_DoraApp.swift */; };
 		B2C1D3332CA5841F0072737F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C1D3322CA5841F0072737F /* ContentView.swift */; };
 		B2C1D3392CA584200072737F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C1D3382CA584200072737F /* Preview Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		B23B37152CB4D893005603B6 /* stress .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "stress .swift"; sourceTree = "<group>"; };
 		B243E3422D09D4E100B29803 /* ScreenThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThree.swift; sourceTree = "<group>"; };
 		B24A10EA2D1A6EB2000D835A /* CloudBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudBackground.swift; sourceTree = "<group>"; };
+		B24A10EC2D1A7354000D835A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		B24A10EE2D1A7E34000D835A /* QuotesDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDropDown.swift; sourceTree = "<group>"; };
 		B2C1D32D2CA5841F0072737F /* Project Dora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Dora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C1D3302CA5841F0072737F /* Project_DoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_DoraApp.swift; sourceTree = "<group>"; };
 		B2C1D3322CA5841F0072737F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +54,7 @@
 		B2C1D3242CA5841F0072737F = {
 			isa = PBXGroup;
 			children = (
-				B24A10EA2D1A6EB2000D835A /* CloudBackground.swift */,
+				B24A10EE2D1A7E34000D835A /* QuotesDropDown.swift */,
 				B2F6A9742CBE2493009437B2 /* Images.xcassets */,
 				B2C1D32F2CA5841F0072737F /* Project Dora */,
 				B2C1D32E2CA5841F0072737F /* Products */,
@@ -78,6 +82,8 @@
 				B2E53AF22CB8301A00777F46 /* QuotesData.swift */,
 				B2C1D3362CA584200072737F /* Project_Dora.entitlements */,
 				B2C1D3372CA584200072737F /* Preview Content */,
+				B24A10EA2D1A6EB2000D835A /* CloudBackground.swift */,
+				B24A10EC2D1A7354000D835A /* Buttons.swift */,
 			);
 			path = "Project Dora";
 			sourceTree = "<group>";
@@ -165,10 +171,12 @@
 				B2181A3C2CAADD7D00B170EC /* FavView.swift in Sources */,
 				B2181A382CAAC94700B170EC /* ScreenTwo.swift in Sources */,
 				B2C1D3312CA5841F0072737F /* Project_DoraApp.swift in Sources */,
+				B24A10ED2D1A7354000D835A /* Buttons.swift in Sources */,
 				B243E3432D09D4E100B29803 /* ScreenThree.swift in Sources */,
 				B2E53AF32CB8301A00777F46 /* QuotesData.swift in Sources */,
 				B23B37162CB4D897005603B6 /* stress .swift in Sources */,
 				B2181A3A2CAADD2100B170EC /* TabBar.swift in Sources */,
+				B24A10EF2D1A7E34000D835A /* QuotesDropDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

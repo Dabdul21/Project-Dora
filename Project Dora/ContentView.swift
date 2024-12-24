@@ -87,19 +87,12 @@ struct ContentView: View {
                         ScreenTwo()
                     } label: {
                         
-                        
                         ZStack {
-                            
-                            
                             Image("11")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 175)
 
-//                            Text("Looking Good")
-//                                .foregroundStyle(.black)
-//                                .font(.system(size: 25, weight: .bold))
-//                                .padding()
                         }
                         .offset(x: topCloudOffsetX, y: topCloudOffsetY) // Apply offset to the entire ZStack
                         .shadow(radius: 1)
@@ -117,16 +110,12 @@ struct ContentView: View {
                     NavigationLink {
                         ScreenTwo()
                     } label: {
+                        
                         ZStack {
                             Image("2")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 175)
-
-//                            Text("Keep Going!")
-//                                .font(.system(size: 25, weight: .bold))
-//                                .foregroundColor(.black)
-//                                .padding()
                         }
                         .offset(x: midCloudOffsetX, y: midCloudOffsetY) // Apply offset to the entire ZStack
                         .shadow(radius: 1)
@@ -144,17 +133,14 @@ struct ContentView: View {
                     NavigationLink{
                         ScreenTwo()
                     } label: {
+                        
                         ZStack {
                             Image("3")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 165)
-
-//                            Text("You Rock!")
-//                                .font(.system(size: 25, weight: .bold))
-//                                .foregroundColor(.black)
-//                                .padding()
                         }
+                        
                         .offset(x: lastCloudOffsetX, y: lastCloudOffsetY) // Apply offset to the entire ZStack
                         .shadow(radius: 1)
                         .onAppear {
