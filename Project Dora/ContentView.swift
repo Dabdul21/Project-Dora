@@ -70,16 +70,16 @@ struct ContentView: View {
                                 }
                             }
                         }
-                        
-                        Text("RAE")
+                        //was RAE
+                        Text("D.O.R.A")
                             .font(.system(size: 25, weight: .bold))
                             .multilineTextAlignment(.center)
                             .padding(.top, -110)
                         
-                        Text("Reading Affirmations Everyday")
-                            .font(.system(size: 20, weight: .bold))
-                            .multilineTextAlignment(.center)
-                            .padding(.top, -80)
+//                        Text("Reading Affirmations Everyday")
+//                            .font(.system(size: 20, weight: .bold))
+//                            .multilineTextAlignment(.center)
+//                            .padding(.top, -80)
                     }
                     
                     // Top Cloud with text
