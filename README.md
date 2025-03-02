@@ -23,3 +23,7 @@ DORA is a personalized affirmation app featuring your adorable companion, a chee
 
 https://www.youtube.com/watch?v=NZdE0mCXr78&ab_channel=DayanAbdulla
 
+
+
+https://github.com/user-attachments/assets/28c98714-c86e-498d-be71-ec71d5c6df04
+
